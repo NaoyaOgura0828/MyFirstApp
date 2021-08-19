@@ -8,11 +8,13 @@
 
     <TextView
         android:id="@+id/appTitle"
-        android:layout_width="108dp"
-        android:layout_height="23dp"
+        android:layout_width="256dp"
+        android:layout_height="72dp"
         android:layout_marginTop="80dp"
         android:layout_marginBottom="28dp"
+        android:gravity="center_horizontal|center_vertical"
         android:text="@string/appTitle"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/heightLabel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,6 +71,7 @@
         android:layout_marginBottom="44dp"
         android:onClick="onClickButton"
         android:text="@string/buttonCalc"
+        app:backgroundTint="#2196F3"
         app:layout_constraintBottom_toTopOf="@+id/bmiScore"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -79,6 +82,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="201dp"
         android:text="@string/bmiScore"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
