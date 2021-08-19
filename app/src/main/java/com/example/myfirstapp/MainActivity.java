@@ -30,7 +30,10 @@ public class MainActivity extends AppCompatActivity {
 
         height /= 100; // 身長をcmからmに変換し"height"へオーバーライド
         bmi = weight / (height * height); // BMIを算出する式
-        String msg = "BMIスコア: " + bmi;// BMIスコア表示の為の文字列
+
+        String roundingBmi = String.format("%.1f", bmi); // 四捨五入してBMIの小数点以下1桁までの値を格納する
+
+        String msg = "BMIスコア: " + roundingBmi;// BMIスコア表示の為の文字列
 
         bmiScore.setText(msg); // bmiScoreへmsgをセットして結果を表示する
     }
