@@ -10,67 +10,75 @@
         android:id="@+id/appTitle"
         android:layout_width="108dp"
         android:layout_height="23dp"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="80dp"
         android:layout_marginBottom="28dp"
         android:text="@string/appTitle"
         app:layout_constraintBottom_toTopOf="@+id/heightLabel"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="151dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/heightLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/heightLabel"
         app:layout_constraintBottom_toTopOf="@+id/heightForm"
-        tools:layout_editor_absoluteX="191dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/heightForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="37dp"
+        android:layout_marginBottom="36dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/heightForm"
         app:layout_constraintBottom_toTopOf="@+id/weightLabel"
-        tools:layout_editor_absoluteX="94dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/weightLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="28dp"
         android:text="@string/weightLabel"
         app:layout_constraintBottom_toTopOf="@+id/weightForm"
-        tools:layout_editor_absoluteX="191dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/weightForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="49dp"
+        android:layout_marginBottom="44dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/weightForm"
         app:layout_constraintBottom_toTopOf="@+id/buttonCalc"
-        tools:layout_editor_absoluteX="95dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonCalc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="79dp"
+        android:layout_marginBottom="44dp"
         android:text="@string/buttonCalc"
         app:layout_constraintBottom_toTopOf="@+id/bmiScore"
-        tools:layout_editor_absoluteX="134dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/bmiScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="201dp"
         android:text="@string/bmiScore"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="499dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
